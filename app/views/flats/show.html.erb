@@ -5,11 +5,44 @@
 
 
   <div class="flat-show-card">
-    <%= @flat.name %>
-    <%= @flat.address %>
+    <h1><%= @flat.name %></h1>
+    <p><%= @flat.address %></p>
   </div>
 
   <div class="flat-show-card">
+    <h3>A bit more about this flat</h3>
     <%= @flat.description %>
+  </div>
+
+  <div class="col-4">
+    <div class="flat-show-card">
+      <h5>Book this place!</h5>
+      <form action>
+
+      </form>
+      <div class="flat-show-card">
+        <h3>Details</h3>
+        <div class="flex">
+          <div class="flex">
+            <i></i>
+            <span><%= @flat.number_of_guests %></span>
+          </div>
+          <div class="flex">
+            <i></i>
+            <span><%= @flat.price_per_night %></span>
+          </div>
+        </div>
+        <div class="flat-show-card">
+          <h6>Share</h6>
+          <div class="flex">
+            <i class="fab fa-facebook-square fa-2x"></i>
+            <i class="fab fa-pinterest-square fa-2x"></i>
+            <i class="fas fa-envelope-square fa-2x"></i>
+          </div>
+        </div>
+
+      </div>
+    </div>
+
   </div>
 </div>
